@@ -311,56 +311,26 @@ aside #info-nosotros h2 {
 
 
 }
-
-.banner__contacto {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    
-}   
-
-.img-contacto {
-   
-    padding: 10px;
-    align-items: center;
-    grid-row: 1/2;    
-    grid-column: 2/3;
-    align-self: center;
-}
-
-            
+           
         
-.img-contacto img {
-        
-    width: 600px;
-    height: 650px;
-    object-fit: cover;
-        
-
-}
-
-
-
-.contactos form{
-    height: 650px;
+.contacto-banner form{
+    height: auto;
 	width:100%;
 	padding:10px;
-	border-radius:15px;
-	margin:50px;
+	border-radius:10px;
+    margin: 5px 0;	
     background-color: rgb(221, 218, 218);
-    justify-self: center;
     
-    
+        
 }
      
-.contactos form label{
+.contacto-banner form label{
 	width:100%;
 	font-weight:bold;
 	display:inline-block;
 }
 
-.contactos form input{
+.contacto-banner form input{
 	width:100%;
 	padding:5px 10px;
 	border:1px solid #f6f6f6;
@@ -370,7 +340,7 @@ aside #info-nosotros h2 {
 	display:inline-block;
 }
 
-.contactos form input[type="submit"]{
+.contacto-banner form input[type="submit"]{
 	width:100%;
 	padding:5px;
 	margin-top:20px;
@@ -381,11 +351,11 @@ aside #info-nosotros h2 {
 	background-color:#000;
 } 
 
-.contactos form input[type="submit"]:hover{
+.contacto-banner form input[type="submit"]:hover{
 	background-color:gray;
 }
 
-.contactos textarea{
+.contacto-banner textarea{
 	width:100%;
 	height:100px;
 	border:1px solid #f6f6f6;
@@ -395,6 +365,14 @@ aside #info-nosotros h2 {
 	resize:none;
 	display:block;
 } 
+
+.img-contacto img {
+
+    width: 100%;
+    height: auto;
+    min-height: 680px;
+    object-fit: cover;
+}
 
 
 
@@ -466,11 +444,28 @@ padding: 10px;
 
 
 
+/* secccion publicaciones */
 
+.tittle-banner-publicaciones__galeria img {
 
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  
+}
 
+.tittle-banner-publicaciones p {
 
+    font-size: 18px;
 
+}
+
+.tittle-banner-publicaciones h4 {
+
+    font-size: 24px;
+    border: 1px solid #000;
+    
+}
 
 
 
@@ -634,107 +629,6 @@ padding: 10px;
 }
 
 
-
-@media (max-width: 568px) {
-
-    .img-contacto img {
-
-        display: none;
-            
-    
-    }
-
-}
-
-
-@media (min-width: 769px){
-        .img-contacto img {
-        
-            width: 600px;
-            height: 650px;
-            object-fit: cover;    
-        
-        }
-    }
-
-
-@media (max-width: 613px) {
-
-    .img-contacto img {
-
-        display: none;
-            
-    
-    }
-
-}
-
-@media (min-width: 614px){
-        .img-contacto img {
-        
-            width: 600px;
-            height: 650px;
-            object-fit: cover;    
-        
-        }
-
-
-        .contactos form{
-            height: 650px;
-            width:500px;
-            padding:10px;
-            border-radius:15px;
-            margin:70px;
-            background-color: rgb(221, 218, 218);
-            justify-self: center;
-            
-            
-        }
-             
-        .contactos form label{
-            width:600px;
-            font-weight:bold;
-            display:inline-block;
-        }
-        
-        .contactos form input{
-            width: 70%;
-            padding:5px 10px;
-            border:1px solid #f6f6f6;
-            border-radius:3px;
-            background-color:#f6f6f6;
-            margin:15px 0;
-            display:inline-block;
-        }
-        
-        .contactos form input[type="submit"]{
-            width:45%;
-            padding:5px;
-            margin-top:10px;
-            border:1px solid #000;
-            border-radius:5px;
-            display:block;
-            color:#fff;
-            background-color:#000;
-        } 
-        
-        .contactos form input[type="submit"]:hover{
-            background-color:gray;
-        }
-        
-        .contactos textarea{
-            width:80%;
-            height:100px;
-            border:1px solid #f6f6f6;
-            border-radius:3px;
-            background-color:#f6f6f6;			
-            margin:15px 0;
-            resize:none;
-            display:block;
-        } 
-    }
-
-
 /* seccion alquiler */
 
 
@@ -773,4 +667,25 @@ padding: 10px;
     }
 
 
+}
+
+/* seccion contacto */
+
+@media (max-width:764px) {
+
+    .img-contact img {
+        display: none;
+    }
+}
+
+@media (min-width: 765px){
+    .img-contact img {
+    
+        width: 100%;
+        height: auto;
+        min-height: 650px;
+        object-fit: cover;    
+        padding: 10px;
+    
+    }
 }
