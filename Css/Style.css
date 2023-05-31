@@ -18,15 +18,15 @@
     
     width: 110px;
     height: auto;     
-    object-fit: cover;   
+    
     
 }
 
 .carousel-item img{
-
-    width: auto;
-    height: 450px;
-
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
 
 }
 
@@ -53,7 +53,7 @@ label {
     
 }
 
-.imagenes {
+.prop-destacadas__imagenes {
 
     display: flex;
     width: 100%;
@@ -61,29 +61,37 @@ label {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: auto;
-    background-color: #f5f5f5;
+    
+    
     
 }
 
-.tittle-banner p {
+.prop-destacadas__parrafo {
+
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin:5px;
+    
+}
+
+.prop-destacadas__parrafo p {
 
     text-align: center;
     margin: 5px;
-    text-decoration: underline;
     font-weight: 600;
-   
+       
 }
 
-.galeria {
+.prop-destacadas__galeria {
 
     width: 250px;
     height: 150px;
     margin-bottom: 10px;
     object-fit: cover;
     margin: 10px;
-    border-style: groove;
-    border-color: #d6d3d3;
-       
+           
 }
 
 aside.info {
@@ -104,13 +112,14 @@ aside .info-maps iframe {
 }
 
 aside #info-nosotros {
-    border: #000 1px solid;
+    border: 1px solid #d1d1d1;
     padding: 10px;
     margin: 0 10px;
     align-items: center;
     background-color: rgb(245, 243, 243);
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
    
      
      
@@ -178,8 +187,7 @@ aside #info-nosotros h2 {
     justify-content: center;
     flex-wrap: wrap;
     padding: 15px;
-    
-    
+  
 }
   
 .img-compra .tittle-banner-compra {
@@ -191,13 +199,21 @@ aside #info-nosotros h2 {
     text-decoration: none;
     text-align: center;
     width: auto;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+.img-compra .tittle-banner-compra img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
 .img-compra .tittle-banner-compra h3 {
 
     text-align: center;
     width: auto;
-   
+   font-size: 25px;
 }
 
 .img-compra .tittle-banner-compra h4 {
@@ -215,17 +231,6 @@ aside #info-nosotros h2 {
        
 }
 
-.img-compra .tittle-banner-compra img {
-        
-    width: 350px;
-    height: 200px;    
-    object-fit: cover;
-    margin: 15px;
-    border-style: groove;
-    border-color: #d6d3d3;
-    border: #a7f7fd solid 1px;   
-    
-}
 
 /* Seccion Emprendimiento */
 
@@ -375,112 +380,95 @@ aside #info-nosotros h2 {
 }
 
 
-
-/* seccion alquiler */
-
-
-.alquiler-seccion {
-
-    display: grid;
-    grid-template-columns:1fr;
-    justify-items: center;
-    padding: 12px;
-    margin: 0 15px;
-    
-
-}
-
-.card {
-    margin: 10px;
-}
-
-
 /* Seccion Publicaciones */
 
+.banner-publicaciones {
 
-.txt-tittle {
-
-    border: 1px solid #000;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 15px;
-    margin:25px;
-    align-items: center;
-    font-size: 14px;
+    
     
 }
-
-.txt-tittle h1 {
-
-text-align: center;
-text-decoration:underline;
-padding: 10px;
-    
+  
+.banner-publicaciones .banner-publicaciones__galeria {
+   
+    width: auto;
+    margin: 5px;
+    background-color:rgb(245, 242, 242);
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
 }
 
-.txt-tittle p {
+.banner-publicaciones .banner-publicaciones__galeria img {
+
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+}
+
+
+.banner-publicaciones .txt-tittle-publicaciones h4 {
 
     text-align: center;
-    text-decoration: 1px solid black;
+    width: auto;
+    font-size: 27px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+.banner-publicaciones .txt-tittle-publicaciones p {
+
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    border: 1px solid #d1d1d1;
+    max-width: 900px;
+    border-radius: 10px;
+       
+}
+
+.txt-tittle-publicaciones {
+
+    
+    padding: 10px;
+    margin:10px;
+    align-items: center;
+    font-size: 10px;
+    
+}
+
+.txt-tittle-publicaciones h4 {
+
+    text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    
+}
+
+.txt-tittle-publicaciones p {
+
+    text-align: center;
+    text-decoration: 1px solid #d1d1d1;
     padding: 10px;   
     font-size: 30px; 
    
     
 }
 
-.txt-description {
+.txt-description-publicaciones {
      
     padding: 15px;
     margin: 50px;  
     font-size: 23px;     
   
 }
-
-
-.info-maps_publicaciones iframe{
-
-    width: 650px;
-    height: 500px;
-    align-items: center;
-}
-
-
-
-/* secccion publicaciones */
-
-.tittle-banner-publicaciones__galeria img {
-
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-  
-}
-
-.tittle-banner-publicaciones {
-
-    border: 1px solid #000;
-    width: auto;
-    padding: 10px;
-    margin: 5px 10px;
-    
-}
-
-.tittle-banner-publicaciones p {
-
-    font-size: 18px;
-    margin: 10px
-    
-
-}
-
-.tittle-banner-publicaciones h4 {
-
-    font-size: 24px;
-    margin: 10px ;
-    border-style: inherit;
-    padding: 10px;
-    
-    
-}
-
 
 .txt-aside_otras-publicaciones {
     text-align: center;
@@ -490,14 +478,44 @@ padding: 10px;
 
 }
 
+.otras-publicaciones__galeria img {
 
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  
+}
 
+.txt-aside_otras-publicaciones__description {
 
+    border: 1px solid #d1d1d1;
+    width: auto;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    
+}
 
+.txt-aside_otras-publicaciones__description p {
 
+    font-size: 18px;
+    margin: 10px
+    
 
+}
 
+.txt-aside_otras-publicaciones__description h4 {
 
+    font-size: 24px;
+    margin: 10px ;
+    border-style: inherit;  
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+} 
 
 
 
@@ -566,6 +584,17 @@ padding: 10px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* Seccion Inicio */
 
 @media (min-width: 558px) /* min= a partir de.. */ {  
     .prop-destacadas { 
@@ -590,6 +619,8 @@ padding: 10px;
         
     
     }
+
+/* Seccion Compra-alquiler */    
 
     .compra-alquiler-txt {
 
@@ -651,46 +682,6 @@ padding: 10px;
  
 }
 
-
-/* seccion alquiler */
-
-
-@media (min-width: 703px){
-.alquiler-seccion {
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: center;
-    padding: 12px;
-    margin: 0 15px;
-    
-
-}
-
-.card {
-    margin: 10px;
-}
-}
-
-
-@media (min-width: 1029px) {
-    .alquiler-seccion {
-
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        justify-items: center;
-        padding: 12px;
-        margin: 0 15px;
-        
-    
-    }
-    
-    .card {
-        margin: 10px;
-    }
-
-
-}
 
 /* seccion contacto */
 
